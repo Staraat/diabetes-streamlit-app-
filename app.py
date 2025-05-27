@@ -126,7 +126,20 @@ with tab1:
             nodoccost = st.selectbox("Skipped doctor due to cost?", yn(), format_func=fmt)
 
         st.subheader("📋 Current Health Status")
-        bmi  = st.slider("Body‑Mass‑Index (kg/m^2)", 10.0, 50.0, 25.0)
+        use_bmi_calc = st.checkbox("I don't know my BMI, help me calculate it")
+
+        if use_bmi_calc:
+            height_cm = st.number_input("Enter your height (cm):", min_value=100.0, max_value=250.0, value=170.0)
+            weight_kg = st.number_input("Enter your weight (kg):", min_value=30.0, max_value=200.0, value=65.0)
+        
+            height_m = height_cm / 100
+            bmi_value = round(weight_kg / (height_m ** 2), 2)
+        
+            st.success(f"✅ Your calculated BMI is: **{bmi_value} kg/m²**")
+            bmi = st.slider("Body-Mass-Index (kg/m²)", 10.0, 50.0, value=bmi_value)
+        else:
+            bmi = st.slider("Body-Mass-Index (kg/m²)", 10.0, 50.0, value=25.0)
+
         gen  = st.selectbox("General health rating", [1,2,3,4,5], format_func=lambda x:["Excellent","Very good","Good","Fair","Poor"][x-1])
         col_mh, col_ph = st.columns(2)
         with col_mh:
