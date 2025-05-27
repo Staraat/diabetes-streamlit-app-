@@ -3,7 +3,7 @@ A Streamlit app to predict diabetes risk using health indicators and XGBoost, wi
 
 This Streamlit application allows users to:
 
-🩺 Predict their diabetes risk (Healthy / Pre-diabetic / Diabetic) using an XGBoost model trained on real health survey data.
+🩺 Predict their diabetes risk (Healthy / Diabetic) using an XGBoost model trained on real health survey data.
 
 📊 View an interactive SHAP explanation showing the main health factors influencing their result.
 
