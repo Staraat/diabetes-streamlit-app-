@@ -126,9 +126,10 @@ with tab1:
             nodoccost = st.selectbox("Skipped doctor due to cost?", yn(), format_func=fmt)
 
         st.subheader("📋 Current Health Status")
+        
         use_bmi_calc = st.checkbox("I don't know my BMI, help me calculate it")
-
         if use_bmi_calc:
+            st.markdown("### 🧮 BMI Calculator")
             height_cm = st.number_input("Enter your height (cm):", min_value=100.0, max_value=250.0, value=170.0)
             weight_kg = st.number_input("Enter your weight (kg):", min_value=30.0, max_value=200.0, value=65.0)
         
