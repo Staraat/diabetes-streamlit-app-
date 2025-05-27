@@ -1,0 +1,10 @@
+streamlit
+pandas
+numpy
+scikit-learn
+joblib
+matplotlib
+shap
+category_encoders
+openpyxl
+xgboost
