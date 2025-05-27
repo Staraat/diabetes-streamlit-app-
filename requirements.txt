@@ -8,3 +8,4 @@ shap
 category_encoders
 openpyxl
 xgboost
+ipython
