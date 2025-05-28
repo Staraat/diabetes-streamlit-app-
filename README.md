@@ -12,7 +12,7 @@ To predict diabetes risk using behavioral and health indicators, and help users 
 
 ---
 
-## 🛠Tools Used
+## Tools Used
 
 - Python (pandas, matplotlib, scikit-learn, XGBoost, Random Forest, Logistic Regression, SHAP)
 - Streamlit
