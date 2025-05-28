@@ -45,7 +45,7 @@ To predict diabetes risk using behavioral and health indicators, and help users 
 
 ## Streamlit App Features
 
-[🔗 Live Demo (hosted on Streamlit Cloud)]([https://diabxgb.streamlit.app/])
+Live Demo hosted on Streamlit Cloud - https://diabxgb.streamlit.app/
 
 1. **Diabetes Risk Predictor**  
    Users can input health info and lifestyle factors to get a predicted risk level
